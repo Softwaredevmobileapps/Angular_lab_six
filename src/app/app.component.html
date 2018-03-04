@@ -1,0 +1,18 @@
+
+<h1>Students</h1>
+
+<ol>
+  <li *ngFor="let s of students"> <p>{{s.id}}, {{s.name}}, {{s.address}} </p> </li> 
+
+</ol>
+
+<h1>Weather in Galway</h1>
+
+{{weather[0].main}}, {{weather[0].description}}
+
+<h1>Sports News in Ireland</h1>
+<ol>
+  <li *ngFor="let n of news"> <p>{{n.title}}, {{n.description}}, 
+    <a href="{{n.url}}">{{n.url}}</a>  <img src="{{n.urlToImage}}"> </p> </li> 
+
+</ol>
